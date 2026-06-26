@@ -2,11 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://cfl4e3cxnvccp" path="res://icon.svg" id="1_37kl0"]
 [ext_resource type="PackedScene" uid="uid://n1wnjuvilgpa" path="res://entities/player.tscn" id="2_8uh7m"]
+[ext_resource type="PackedScene" uid="uid://d0xy5blf0vntl" path="res://ui/movement_controls.tscn" id="3_6uqi0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ohk3"]
 size = Vector2(1159, 210)
 
-[node name="test" type="Node2D" unique_id=531282117]
+[node name="Test" type="Node2D" unique_id=531282117]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=86944603]
 
@@ -20,3 +21,11 @@ scale = Vector2(9.1796875, 1.609375)
 texture = ExtResource("1_37kl0")
 
 [node name="player" parent="." unique_id=591319992 instance=ExtResource("2_8uh7m")]
+position = Vector2(41, 134)
+
+[node name="Movement Controls" parent="." unique_id=773972826 instance=ExtResource("3_6uqi0")]
+z_index = -5
+offset_left = 16.0
+offset_top = 336.0
+offset_right = 56.0
+offset_bottom = 376.0

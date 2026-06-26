@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ohk3"]
 size = Vector2(68, 125)
 
-[node name="player" type="CharacterBody2D" unique_id=591319992]
+[node name="Player" type="CharacterBody2D" unique_id=591319992]
 script = ExtResource("1_merdl")
 metadata/_edit_group_ = true
 

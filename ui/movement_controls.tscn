@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://d0xy5blf0vntl"]
+
+[ext_resource type="Texture2D" uid="uid://cmpgdoa82j034" path="res://assets/sprites/Buttons_control/Keyboard & Mouse/Default/keyboard_space_icon_outline.png" id="1_poour"]
+[ext_resource type="Texture2D" uid="uid://cmn56j24kfrcd" path="res://assets/sprites/Buttons_control/Keyboard & Mouse/Default/keyboard_a_outline.png" id="2_j34lg"]
+[ext_resource type="Texture2D" uid="uid://bdvpvw2qugcye" path="res://assets/sprites/Buttons_control/Keyboard & Mouse/Default/keyboard_d_outline.png" id="3_kyiyl"]
+
+[node name="Movement_controls" type="Control" unique_id=1333361212]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1376810335]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 128.0
+texture = ExtResource("1_poour")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1439336014]
+layout_mode = 0
+offset_right = 132.0
+offset_bottom = 64.0
+columns = 2
+
+[node name="A" type="TextureRect" parent="GridContainer" unique_id=43492724]
+layout_mode = 2
+texture = ExtResource("2_j34lg")
+
+[node name="D" type="TextureRect" parent="GridContainer" unique_id=444551320]
+layout_mode = 2
+texture = ExtResource("3_kyiyl")
